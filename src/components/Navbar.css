@@ -1,0 +1,27 @@
+.app-navbar{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 150px;
+}
+
+
+.navbar-menu{
+    list-style: none;
+    gap: 20px;
+    display: flex;
+    font-size: 18px;
+    color: #49557e;
+}
+
+.navbar-right{
+ display: flex;
+ align-items: center;
+ gap: 40px;
+}
+
+
