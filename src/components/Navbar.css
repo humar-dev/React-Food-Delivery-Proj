@@ -24,4 +24,39 @@
  gap: 40px;
 }
 
+.navbar-right button{
+    background-color: transparent;
+    font-size: 16px;
+    color: #49557e;
+    border: 1px solid tomato;
+    padding: 3px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar-right button:hover{
+  background-color: #fff4f2;
+}
+
+.navbar-menu .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+}
+
+.navbar-search-div{
+    position: relative;
+}
+
+
+.navbar-search-div .dot{
+  position: absolute;
+  background-color: tomato;
+  min-width: 10px;
+  min-height: 10px;
+  top: -8px;
+  right: -8px;
+  border-radius: 50px;
+}
+
 
