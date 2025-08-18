@@ -12,13 +12,13 @@ function ExploreMenu() {
 
 
 
-                    return (
-                        <div key={index} className='explore-menu-list-item'>
-                            {/* <img src={item.menu_image}></img>
-                            <p>{item.menu_name}</p> */}
+                    // return (
+                    //     <div key={index} className='explore-menu-list-item'>
+                    //         {/* <img src={item.menu_image}></img>
+                    //         <p>{item.menu_name}</p> */}
 
-                        </div>
-                    )
+                    //     </div>
+                    // )
                 })}
 
 
