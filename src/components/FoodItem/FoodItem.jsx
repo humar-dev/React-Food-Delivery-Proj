@@ -11,19 +11,17 @@ function FoodItem({ id, name, price, description, image }) {
   return (
     <div className='food-item'>
       <div className="food-item-img-container">
-        <img className='food-item-image' src={image} alt='food-item-image' />
+        <img className='food-item-image'   src={image} alt='food-item-image' />
         {
-          !CountItem
-            ? <img className='add' onClick={() => SetCountItem(prev => prev + 1)} src={assets.add_icon_white} />
+          !cardItems[id]
+            ? <img className='add' onClick={()=>addToCart(id)} src={assets.add_icon_white} />
             : <div className='food-item-counter'>
-               <img  onClick={()=>SetCountItem(prev=>prev-1)} src={assets.remove_icon_red} />
-               <p>{CountItem}</p>
-               <img onClick={()=>SetCountItem(prev=>prev+1)} src={assets.add_icon_green}/>
+               <img  onClick={()=>removeFromCart(id)} src={assets.remove_icon_red} />
+               <p>{cardItems[id]}</p>
+               <img onClick={()=>addToCart(id)} src={assets.add_icon_green}/>
             </div>
 
         }
-
-
       </div>
 
       <div className="food-item-info">
